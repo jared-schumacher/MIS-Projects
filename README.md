@@ -33,3 +33,29 @@ The purpose of this project is to provide executives with data-driven answers to
 
 ---
 
+# Shopify Store Employee Backend System *IN PROGRESS*
+
+A SQL Server backend system for internal employee operations at a Shopify store.
+
+---
+
+## Purpose
+This project is a SQL Server backend system designed to support internal employee operations at a Shopify store. It provides the data foundation employees would use to manage product inventory, log and summarize sales, and maintain customer and vendor records. The current phase focuses on database design, schema and stored procedures, with an API/front-end layer planned as a future addition.
+
+---
+
+## Tasks Performed 
+* **Database Schema Design:** Architected a relational database model from scratch, defining data types, primary keys, and foreign key relationships to link Products, Customers, Vendors, and Sales tables.
+* **Sales & Inventory Data Structuring:** Designed dedicated tables to separate transactional detail from summary reporting, including `SalesDetailsTable` for line-item records and `SalesSummaryTable` for aggregated sales data.
+* **Audit Trail Implementation:** Built a `LineItemAuditLog` table and corresponding `EditingLineItems` procedure to automatically track and preserve a history of changes made to sales line items.
+* **Stored Procedure Development:** Wrote stored procedures (`InsertProduct`, `SaveCustomer`, `SaveLineItem`, `CreateNewSalesSummary`) to handle core create/update operations across the product, customer, and sales tables.
+* **Geographic Reference Integration:** Created a `GeographyTable` to normalize location data and support region-based customer and vendor tracking.
+
+---
+
+## Software & Skills Used
+* **Database Engine & IDE:** Microsoft SQL Server / SQL Server Management Studio (SSMS)
+* **Data Languages:** Structured Query Language (SQL) / Transact-SQL (T-SQL)
+* **Core Technical Skills:** Relational Database Design, Stored Procedure Development, Foreign Key Relationships, Audit Trail Design, Data Normalization, Transactional Data Modeling.
+
+---
